@@ -18,7 +18,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": true,
+            "aot": false,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -41,6 +41,7 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
+              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -123,6 +124,6 @@
   },
   "defaultProject": "olpejeta",
   "cli": {
-    "analytics": "b4c618d7-f6c4-4f7d-9beb-f4604f6eb1c6"
+    "analytics": "3cfd674a-203d-4980-b417-e04b7b4b2bfd"
   }
 }
