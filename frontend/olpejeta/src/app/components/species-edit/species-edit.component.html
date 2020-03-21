@@ -1,0 +1,33 @@
+<div class="example-container mat-elevation-z8">
+    <div class="example-loading-shade"
+         *ngIf="isLoadingResults">
+      <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+    </div>
+    <div class="button-row">
+      <a mat-flat-button color="primary" (click)="birdDetails()"><mat-icon>info</mat-icon></a>
+    </div>
+
+    <mat-card class="example-card">
+      <form [formGroup]="birdForm" (ngSubmit)="onFormSubmit()">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Bird Name" formControlName="common_name"
+                 [errorStateMatcher]="matcher">
+          <mat-error>
+            <span *ngIf="!birdForm.get('common_name').valid && birdForm.get('common_name').touched">Please enter Bird Name</span>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Bird Scientic Name" formControlName="scientific_name"
+                 [errorStateMatcher]="matcher">
+          <mat-error>
+            <span *ngIf="!birdForm.get('scientific_name').valid && birdForm.get('scientific_name').touched">Please enter Bird Scientific Name</span>
+          </mat-error>
+        </mat-form-field>
+
+        <div class="button-row">
+          <button type="submit" [disabled]="!birdForm.valid" mat-flat-button color="primary"><mat-icon>save</mat-icon></button>
+        </div>
+      </form>
+    </mat-card>
+  </div>

@@ -1,1 +1,70 @@
-<p>dashboard works!</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ol Pejeta Conservancy</title>
+    
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"></div>
+      <a href="#" class="nav-trigger"><span></span></a>
+      <h3 class="text-center title">OL PEJETA</h3>
+    </div>
+    <div class="side-nav">
+      <div class="logo">
+        <!-- <i class="fa fa-tachometer"></i> -->
+        <img src="../assets/images/logo.png" alt="Logo" class="img-fluid" width="100%" />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a routerLink="summary" routerLinkActive="active">
+              <span> <i class="fas fa-chart-line icon"></i></span>
+              <span>Summary</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="species">
+              <span><i class="fas fa-feather-alt"></i></span>
+              <span>Species</span>
+            </a>
+          </li>
+          <li class="active">
+            <a routerLink="users">
+              <span><i class="fas fa-users"></i></span>
+              <span>Users</span>
+            </a>
+          </li>
+         
+          <li>
+            <a routerLink="sightings">
+              <i class="fab fa-glide"></i>
+              <span>Sightings</span>
+            </a>
+          </li>
+
+          <li>
+            <a routerLink="guides">
+              <i class="fab fa-glide"></i>
+              <span>Guides</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+    <div class="main-content">
+        <router-outlet></router-outlet>
+    </div>
+  </div>
+  </body>
+</html>
+

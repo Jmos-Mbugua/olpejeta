@@ -1,31 +1,65 @@
 <div class="encloser">
   <div class="top-bar"></div>
-   
-   
   <div class="container">
-   
-  <div class="flex-items d-flex justify-content-center align-items-center" style="height: 96vh;">
-      <div class="card mt-4" style="width: 25rem;">
-          <img src="../../../assets/ol-pejeta-logo.svg" alt="Responsive image" class="img-fluid d-block w-75 ml-5">
-          <div class="card-body">
-              <form action="/action_page.php" class="text-center mt-4">
-                <div class="inputWithIcon">  
-                  <input type="text" class="form-control" id="username" placeholder="username">
-                  <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-                </div>
-                <div class="inputWithIcon">      
-                  <input type="text" class="form-control" id="pwd" placeholder="password">
-                  <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox"> Remember me</label>
-                </div>
-                <button type="submit" class="btn btn-success btn-sm">Submit</button>        
-   
-            </form>
-          </div>
+    <div
+      class="flex-items d-flex justify-content-center align-items-center flex-column"
+    >
+      <img
+        src="../../../assets/ol-pejeta-logo.svg"
+        alt="Responsive image"
+        class="img-fluid d-block ml-5 logo"
+      />
+      <h6>ADMIN LOGIN</h6>
+
+      <form class="text-center mt-4">
+        <div class="inputWithIcon " style="padding-bottom: 10px;">
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            placeholder="username"
+          />
+          <i
+            style="color: #77a141;"
+            class="fa fa-user fa-lg fa-fw"
+            aria-hidden="true"
+          ></i>
         </div>
-  </div>    
+        <div class="inputWithIcon" style="padding-bottom: 10px;">
+          <input
+            type="password"
+            class="form-control"
+            id="pwd"
+            placeholder="password"
+          />
+          <i
+            style="color: #77a141"
+            class="fa fa-lock fa-lg fa-fw"
+            aria-hidden="true"
+            toggle="#pwd"
+          ></i>
+          <i
+            style="color: #94948a;"
+            class="fa fa-eye"
+            id="me"
+            aria-hidden="true"
+          ></i>
+        </div>
+        <div class="checkbox">
+          <p style="color: #94948a;">
+            <label><input type="checkbox" /> Remember me</label>
+          </p>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-success btn-sm"
+          routerLink="dashboard/summary"
+        >
+          LOGIN
+        </button>
+      </form>
+    </div>
+    <h6>PROJECT STARLING</h6>
   </div>
-  <div class=bottom-bar></div>
-  </div>
+</div>
+<div class="bottom-bar"></div>

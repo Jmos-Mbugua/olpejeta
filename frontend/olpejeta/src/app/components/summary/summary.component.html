@@ -1,0 +1,31 @@
+<div class="container">
+  <app-search-bar
+    (onSelectedOption)="onSelectedFilter($event)"
+  ></app-search-bar>
+  <div class="data d-flex align-items-center">
+    <div
+      id="map"
+      leaflet
+      [leafletOptions]="options"
+      [leafletLayersControl]="layersControl"
+    ></div>
+    <div class="details">
+      <div class="card items text-center">
+        <p><small>Species</small></p>
+        <h3 class="species">All</h3>
+      </div>
+      <div class="card items">
+        <p><small>Locations</small></p>
+        <h3 class="locations">20</h3>
+      </div>
+      <div class="card items">
+        <p><small>Sightings</small></p>
+        <h3 class="sightings">300</h3>
+
+      </div>
+    </div>
+    <div class="chart">
+      <p>Chart goes here</p>
+    </div>
+  </div>
+</div>

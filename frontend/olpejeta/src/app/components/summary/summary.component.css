@@ -1,0 +1,49 @@
+.cover {
+  width: 100vw;
+  position: relative;
+  
+}
+#map {
+  height: 70vh;
+  width: 50%;
+  background: #d3d3d3;
+  margin: 0 auto;
+}
+.items {
+  width: 150px;
+  padding: 5px;
+  margin: 10px;
+  justify-content: center;
+  box-shadow: 0.5px 0.5px 3px #333;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 5px;
+}
+.species, .locations, .sightings {
+  font-weight: bolder;
+}
+.species {
+  color: darkgreen;
+}
+.locations {
+  color: darkmagenta;
+}
+
+.sightings{
+  color: chocolate;
+}
+.chart {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  background: #fff;
+  margin: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  box-shadow: 0.5px 0.5px 3px #333;
+}
